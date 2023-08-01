@@ -21,7 +21,7 @@ import {
   IMAGE,
 } from "./../../constants";
 
-const FormatingIcons = ({ textReference, updateMarkdown }) => {
+export const FormatingIcons = ({ textReference, updateMarkdown }) => {
   const getTextarea = () => {
     const current = textReference.current;
     const textarea = current.querySelector("textarea");
@@ -162,5 +162,3 @@ const FormatingIcons = ({ textReference, updateMarkdown }) => {
     </div>
   );
 };
-
-export default FormatingIcons;

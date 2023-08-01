@@ -1,11 +1,11 @@
 import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
 
-import FormatingIcons from "./FormatingIcons";
-import OtherIcons from "./NavIcons";
+import { FormatingIcons } from "./FormatingIcons";
+import { NavIcons } from "./NavIcons";
 import useStyles from "../styles";
 
-const NavBar = ({ textReference, saveAsPDF, updateMarkdown }) => {
+export const NavBar = ({ textReference, saveAsPDF, updateMarkdown }) => {
   const classes = useStyles();
   return (
     <AppBar className={classes.appBar} position="sticky" elevation={0}>
@@ -15,11 +15,9 @@ const NavBar = ({ textReference, saveAsPDF, updateMarkdown }) => {
           updateMarkdown={updateMarkdown}
         />
         <div className={classes.otherIcons}>
-          <OtherIcons saveAsPDF={saveAsPDF} />
+          <NavIcons saveAsPDF={saveAsPDF} />
         </div>
       </Toolbar>
     </AppBar>
   );
 };
-
-export default NavBar;

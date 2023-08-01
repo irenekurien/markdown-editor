@@ -25,7 +25,7 @@ export const initialMarkdownText = `
 - list item 2
 - list item 3
 
-#### 0rdered List
+#### Ordered List
 
 1. list item 1
 2. list item 2

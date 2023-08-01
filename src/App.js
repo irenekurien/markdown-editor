@@ -5,9 +5,7 @@ import hljs from "highlight.js";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 
-import TextEditor from "./components/TextEditor/Editor";
-import MarkdownPreviewer from "./components/Previewer/MarkdownPreviewer";
-import NavBar from "./components/NavBar/NavBar.js";
+import {TextEditor, MarkdownPreviewer, NavBar} from "./components";
 import { initialMarkdownText } from "./constants";
 import useStyles from "./styles";
 

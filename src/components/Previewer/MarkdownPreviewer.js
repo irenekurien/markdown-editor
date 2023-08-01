@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 
-const MarkdownPreviewer = ({ renderMarkdown }) => {
+export const MarkdownPreviewer = ({ renderMarkdown }) => {
   return (
     <Container
       className="markdown-previewer"
@@ -9,5 +9,3 @@ const MarkdownPreviewer = ({ renderMarkdown }) => {
     />
   );
 };
-
-export default MarkdownPreviewer;

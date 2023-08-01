@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, TextareaAutosize } from "@material-ui/core";
 
-const TextEditor = ({ text, onChange }) => {
+export const TextEditor = ({ text, onChange }) => {
   return (
     <Container>
       <TextareaAutosize
@@ -14,5 +14,3 @@ const TextEditor = ({ text, onChange }) => {
     </Container>
   );
 };
-
-export default TextEditor;
